@@ -9,11 +9,17 @@ class MyComponent extends React.Component{
         age : 22
     }
 
-    handleOnChangeName= (event) =>{
+    handleOnChangeName = (event) => {
+        console.log(event)
         this.setState({
             name : event.target.value
         })
     }
+
+    handleOnClick = () => {
+        alert("Xin chào");
+    }
+
     render(){
         let name = 'Long';
         return (
@@ -24,6 +30,10 @@ class MyComponent extends React.Component{
                 onChange={(event)=>this.handleOnChangeName(event)}/>
             Xin chào anh : {this.state.name} <br/>
             Tuổi anh: {this.state.age}!
+        </div>
+
+        <div className="first">
+            <button onClick={() =>this.handleOnClick()}>Click Me!</button>
         </div>
         </React.Fragment>)
     }
