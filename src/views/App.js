@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.scss';
 import MyComponent  from './Example/MyComponent';
+import TodoList from './Example/TodoList';
 
 /**
  *  2 components: class component / function component( function, arrow)
@@ -24,7 +25,7 @@ function App() {
         >
           Learn React
         </a>
-        <MyComponent/>
+        <TodoList/>
       </header>
     </div>
   );
